@@ -1,0 +1,34 @@
+\chapter{Revisão da Literatura}
+\label{chap:revisao}
+
+\section{Inteligência Artificial Geoespacial}
+A Inteligência Artificial Geoespacial (\gls{GeoAI}) integra métodos de inteligência artificial com dados geográficos, permitindo a análise de grandes volumes de dados oriundos de sensores urbanos, \gls{ERB}s, imagens de satélite e fontes complementares. Essa abordagem possibilita extrair insights para planejamento urbano e gestão de emergências, contribuindo para o aprimoramento das estratégias de defesa e resposta a crises. Diversos estudos, como os de \cite{GAO2021}, demonstram que a aplicação de \gls{GeoAI} pode transformar registros tradicionais em informações acionáveis para a tomada de decisão.
+
+Para o desenvolvimento deste trabalho, múltiplas fontes de dados geoespaciais serão integradas na construção do grafo multicamadas, conforme apresentado na Tabela \ref{tab:dados-geoespaciais}. A diversidade dessas fontes representa um desafio metodológico, mas também uma oportunidade para capturar a complexidade do ambiente urbano em suas múltiplas dimensões.
+
+\section{Redes Neurais de Grafos (GNN)}
+As Redes Neurais de Grafos (\gls{GNN}s) são especialmente adequadas para lidar com dados estruturados em forma de grafos, onde entidades (nós) e suas relações (arestas) representam o ambiente urbano. No contexto deste trabalho, utilizam-se principalmente três arquiteturas:
+\begin{itemize}[noitemsep]
+    \item \textbf{Graph Convolutional Networks (GCN)}: Capturam a estrutura espacial e permitem a extração de características locais e globais.
+    \item \textbf{Graph Attention Networks (GAT)}: Introduzem mecanismos de atenção para atribuir importância diferenciada às conexões entre nós.
+    \item \textbf{Temporal Graph Networks (TGN)}: Incorporam a dimensão temporal na modelagem, permitindo prever a evolução dos padrões de mobilidade.
+\end{itemize}
+Essas técnicas são fundamentais para a modelagem preditiva dos fluxos populacionais, uma vez que permitem a integração de informações de diferentes fontes (como terreno, clima e dados socioeconômicos) em um grafo multicamadas.
+
+A Tabela \ref{tab:comparacao-gnn} apresenta uma comparação detalhada entre as principais arquiteturas de \gls{GNN} que serão exploradas neste trabalho. Observa-se que, enquanto GCN oferece boa escalabilidade para grafos extensos, as arquiteturas GAT e TGN proporcionam recursos avançados como mecanismos de atenção e melhor tratamento da dimensão temporal, essenciais para a modelagem de fluxos dinâmicos.
+
+\section{Aplicações em Mobilidade Urbana e Gestão de Crises}
+A previsão de fluxos populacionais por meio de \gls{GNN}s tem se destacado como uma ferramenta valiosa para o planejamento de emergências. Ao modelar a dinâmica urbana como um grafo, é possível identificar áreas de alta vulnerabilidade e pontos críticos para intervenções imediatas. Essa abordagem possibilita:
+\begin{itemize}[noitemsep]
+    \item Análise preditiva dos deslocamentos populacionais em tempo real;
+    \item Identificação de rotas de evacuação eficientes;
+    \item Suporte à tomada de decisões em cenários críticos, como eventos \gls{QBRN}.
+\end{itemize}
+Estudos recentes indicam que a combinação de \gls{GeoAI} e \gls{GNN} permite uma compreensão mais aprofundada das interações urbanas, oferecendo subsídios quantitativos para a gestão de emergências e o dimensionamento de recursos.
+
+Para avaliar a eficácia dos modelos desenvolvidos, serão utilizadas métricas específicas que contemplam tanto a precisão numérica quanto a capacidade de identificação de áreas críticas, conforme detalhado na Tabela \ref{tab:metricas-desempenho}. A combinação destas métricas fornecerá uma avaliação abrangente do desempenho do sistema em diferentes cenários de aplicação.
+
+\section{Considerações Finais}
+A revisão da literatura evidencia que a integração de métodos de \gls{GeoAI} com redes neurais de grafos representa um avanço promissor para a análise de mobilidade urbana. A capacidade de construir modelos preditivos que incorporam tanto a estrutura espacial quanto a dinâmica temporal do ambiente urbano fundamenta o desenvolvimento deste trabalho, que busca oferecer um framework robusto para apoiar o planejamento e a gestão de crises em cidades modernas.
+
+A abordagem proposta distingue-se pela combinação de diferentes técnicas e fontes de dados, resultando em um sistema integrado capaz de capturar a complexidade dos fluxos populacionais e prever comportamentos emergentes em situações críticas. Esta visão holística, sustentada por algoritmos avançados de aprendizado profundo em grafos, representa uma contribuição significativa para o campo de pesquisa em mobilidade urbana e gestão de emergências.

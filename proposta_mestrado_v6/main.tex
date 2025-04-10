@@ -1,0 +1,82 @@
+% !TEX encoding = UTF-8
+% ARQUIVO MAIN.TEX - PROPOSTA DE MESTRADO
+% Modelagem Preditiva de Fluxos Populacionais com Grafos Neurais
+% -------------------------------------------------------------
+
+\documentclass[
+  12pt,               % Tamanho da fonte
+  a4paper,            % Tamanho do papel
+  oneside,            % Impressão em apenas um lado do papel
+  openright,          % Capítulos começam em página ímpar
+  brazil,             % Idioma principal
+  chapter=TITLE,      % Formatação de capítulos em caixa alta
+]{abntex2}
+
+% Garantir compatibilidade com caracteres UTF-8
+\DeclareUnicodeCharacter{00A0}{ }
+\DeclareUnicodeCharacter{00AD}{-}
+
+% -----------------------------------------------------------------
+% PREÂMBULO - IMPORTAÇÃO DE PACOTES E CONFIGURAÇÕES
+% -----------------------------------------------------------------
+\input{preambulo/pacotes}         % Importação de pacotes necessários
+\input{preambulo/correcao-codificacao} % Correções de codificação
+\input{preambulo/configuracoes}   % Configurações gerais do documento
+\input{preambulo/acronimos}       % Definição de acrônimos utilizados no texto
+
+% -----------------------------------------------------------------
+% INFORMAÇÕES DO DOCUMENTO (Título, autor, orientador, etc.)
+% -----------------------------------------------------------------
+\titulo{Modelagem Preditiva de Fluxos Populacionais com Grafos Neurais: Análise Retroativa e Simulação de Movimentos em Cenários de Crises}
+\autor{LUIS FELIPE COMODO SEELIG}
+\orientador{Professor Doutor} % Adicionar nome do orientador
+\instituicao{Instituto Militar de Engenharia}
+\local{Rio de Janeiro}
+\data{\the\year}
+\tipotrabalho{Proposta de Dissertação}
+
+% -----------------------------------------------------------------
+% INÍCIO DO DOCUMENTO
+% -----------------------------------------------------------------
+\begin{document}
+
+% -----------------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS (Simplificados para uma proposta)
+% -----------------------------------------------------------------
+\input{pre-textuais/capa}        % Capa do trabalho
+
+\pretextual
+\imprimirfolhaderosto            % Folha de rosto (usando comando interno do ABNTeX2)
+\input{pre-textuais/resumo}      % Resumo em português
+\tableofcontents                 % Sumário
+
+% -----------------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% -----------------------------------------------------------------
+\textual
+
+% Introdução
+\input{capitulos/cap1-introducao}
+
+% Revisão da Literatura
+\input{capitulos/cap2-revisao}
+
+% Objetivos e Metodologia
+\input{capitulos/cap3-objetivos}
+
+% Cronograma e Recursos
+\input{capitulos/cap4-cronograma}
+
+% -----------------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% -----------------------------------------------------------------
+\postextual
+
+% Glossário de Acrônimos
+\printglossary[type=acronym,title=Lista de Acrônimos,toctitle=Lista de Acrônimos]
+
+% Referências
+\bibliographystyle{abntex2-alf}
+\bibliography{bibliografia}
+
+\end{document}

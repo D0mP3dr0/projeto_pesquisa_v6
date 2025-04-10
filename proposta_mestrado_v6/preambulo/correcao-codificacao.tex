@@ -1,0 +1,52 @@
+% Arquivo de correção de problemas de codificação
+% Adiciona suporte para caracteres especiais que podem causar problemas
+
+% Caracteres problemáticos específicos do projeto
+\DeclareUnicodeCharacter{00A0}{ }     % Espaço indivisível
+\DeclareUnicodeCharacter{00AD}{-}     % Hífen suave
+\DeclareUnicodeCharacter{00B4}{'}     % Acento agudo
+\DeclareUnicodeCharacter{00A7}{\S}    % Símbolo de seção
+\DeclareUnicodeCharacter{00A9}{\copyright} % Copyright
+\DeclareUnicodeCharacter{00AE}{\textregistered} % Marca registrada
+\DeclareUnicodeCharacter{00BA}{\textordmasculine} % Ordinal masculino
+\DeclareUnicodeCharacter{00AA}{\textordfeminine} % Ordinal feminino
+\DeclareUnicodeCharacter{00B0}{\textdegree} % Grau
+\DeclareUnicodeCharacter{00B1}{\textpm} % Mais ou menos
+\DeclareUnicodeCharacter{00B2}{\texttwosuperior} % Ao quadrado
+\DeclareUnicodeCharacter{00B3}{\textthreesuperior} % Ao cubo
+
+% Caracteres acentuados comuns em português
+\DeclareUnicodeCharacter{00E1}{\'{a}} % á
+\DeclareUnicodeCharacter{00E9}{\'{e}} % é
+\DeclareUnicodeCharacter{00ED}{\'{i}} % í
+\DeclareUnicodeCharacter{00F3}{\'{o}} % ó
+\DeclareUnicodeCharacter{00FA}{\'{u}} % ú
+\DeclareUnicodeCharacter{00E0}{\`{a}} % à
+\DeclareUnicodeCharacter{00E8}{\`{e}} % è
+\DeclareUnicodeCharacter{00F2}{\`{o}} % ò
+\DeclareUnicodeCharacter{00E2}{\^{a}} % â
+\DeclareUnicodeCharacter{00EA}{\^{e}} % ê
+\DeclareUnicodeCharacter{00EE}{\^{i}} % î
+\DeclareUnicodeCharacter{00F4}{\^{o}} % ô
+\DeclareUnicodeCharacter{00FB}{\^{u}} % û
+\DeclareUnicodeCharacter{00E3}{\~{a}} % ã
+\DeclareUnicodeCharacter{00F5}{\~{o}} % õ
+\DeclareUnicodeCharacter{00E7}{\c{c}} % ç
+\DeclareUnicodeCharacter{00C7}{\c{C}} % Ç
+
+% Letras maiúsculas acentuadas
+\DeclareUnicodeCharacter{00C1}{\'{A}} % Á
+\DeclareUnicodeCharacter{00C9}{\'{E}} % É
+\DeclareUnicodeCharacter{00CD}{\'{I}} % Í
+\DeclareUnicodeCharacter{00D3}{\'{O}} % Ó
+\DeclareUnicodeCharacter{00DA}{\'{U}} % Ú
+\DeclareUnicodeCharacter{00C0}{\`{A}} % À
+\DeclareUnicodeCharacter{00C8}{\`{E}} % È
+\DeclareUnicodeCharacter{00D2}{\`{O}} % Ò
+\DeclareUnicodeCharacter{00C2}{\^{A}} % Â
+\DeclareUnicodeCharacter{00CA}{\^{E}} % Ê
+\DeclareUnicodeCharacter{00CE}{\^{I}} % Î
+\DeclareUnicodeCharacter{00D4}{\^{O}} % Ô
+\DeclareUnicodeCharacter{00DB}{\^{U}} % Û
+\DeclareUnicodeCharacter{00C3}{\~{A}} % Ã
+\DeclareUnicodeCharacter{00D5}{\~{O}} % Õ} 

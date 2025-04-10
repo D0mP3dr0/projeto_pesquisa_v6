@@ -1,0 +1,57 @@
+% Configurações gerais do documento LaTeX
+% Proposta de Mestrado - Modelagem Preditiva de Fluxos Populacionais com Grafos Neurais
+% Autor: Luis Felipe Comodo Seelig
+
+% Idiomas
+\selectlanguage{brazil}
+
+% Configurações do ABNTeX2
+\renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsectionfont}{\rmfamily\bfseries}
+
+% Configurações de espaçamento
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.2cm}
+
+% Configurações para cabeçalhos e rodapés
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Configurações específicas para citações
+% \ABNTEXbibliographytype{alf} - Removido, comando não definido
+
+% Configurações para lista de siglas (acrônimos)
+% Os acrônimos são definidos no arquivo acronimos.tex
+
+% Configuração para sumário
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+% Configurações para ambiente de itemize e enumerate
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\circ$}
+
+% Configurações para tabelas e figuras
+\captionsetup[table]{skip=10pt, font=footnotesize}
+\captionsetup[figure]{skip=10pt, font=footnotesize}
+
+% Configurações para hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Modelagem Preditiva de Fluxos Populacionais com Grafos Neurais},
+    pdfauthor={Luis Felipe Comodo Seelig},
+    pdfsubject={Proposta de Mestrado},
+    pdfkeywords={GNN, Fluxos Populacionais, Grafos, Emergências}
+}
+
+% Configurações para nomenclatura
+% Comentado pois requer o pacote nomencl que não está carregado
+% \makenomenclature
+% \renewcommand{\nomname}{Lista de Símbolos}
+
+% Ativar numeração de equações por capítulo
+\numberwithin{equation}{chapter}

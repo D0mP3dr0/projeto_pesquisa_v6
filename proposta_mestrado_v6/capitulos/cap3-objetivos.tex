@@ -1,0 +1,50 @@
+\chapter{Objetivos e Metodologia}
+\label{chap:objetivos}
+
+\section{Objetivo Geral}
+Desenvolver um modelo preditivo integrado, baseado em Redes Neurais de Grafos (\gls{GNN}), para identificar e simular padrões de mobilidade populacional em ambientes urbanos. O sistema visa subsidiar o planejamento de emergências e a gestão de crises, especialmente em cenários críticos como os relacionados a ameaças \gls{QBRN}.
+
+\section{Objetivos Específicos}
+\begin{itemize}[noitemsep]
+    \item Construir um grafo urbano multicamadas a partir da integração de dados geoespaciais oriundos de estações de rádio base (\gls{ERB}), dados de terreno, informações climáticas e variáveis socioeconômicas.
+    \item Desenvolver e treinar modelos preditivos utilizando arquiteturas de \gls{GNN}, como Graph Convolutional Networks (GCN), Graph Attention Networks (GAT) e Temporal Graph Networks (TGN), para capturar as interações espaciais e temporais da mobilidade urbana.
+    \item Implementar técnicas de pré-processamento e engenharia de atributos, convertendo dados brutos em features representativas para a modelagem dos grafos.
+    \item Validar o modelo por meio de simulações de cenários emergenciais e análise quantitativa (utilizando métricas como as descritas na Tabela \ref{tab:metricas-desempenho}) para identificação de áreas críticas e otimização de rotas de evacuação.
+    \item Avaliar a aplicabilidade do framework como ferramenta de suporte à decisão para o planejamento urbano e a gestão de crises em contextos com riscos \gls{QBRN}.
+\end{itemize}
+
+\section{Metodologia}
+A abordagem metodológica deste trabalho contempla as seguintes etapas:
+\begin{enumerate}[noitemsep]
+    \item \textbf{Aquisição e Pré-processamento:} Coleta de dados de \gls{ERB}, terreno, clima e variáveis socioeconômicas (conforme detalhado na Tabela \ref{tab:dados-geoespaciais}), seguida de limpeza, normalização e integração dos dados.
+    
+    \item \textbf{Construção do Grafo Urbano:} Modelagem do ambiente urbano como um grafo multicamadas, onde os nós representam elementos espaciais (interseções, edificações, áreas de interesse) e as arestas simbolizam conexões físicas e funcionais.
+    
+    \item \textbf{Desenvolvimento dos Modelos Preditivos:} Implementação e treinamento de modelos baseados em \gls{GNN} (conforme comparativo apresentado na Tabela \ref{tab:comparacao-gnn}) utilizando PyTorch Geometric, com foco em arquiteturas GCN, GAT e TGN.
+    
+    \item \textbf{Simulação e Validação:} Realização de simulações para prever fluxos populacionais, identificação de áreas críticas e análise do desempenho preditivo por meio de métricas quantitativas.
+    
+    \item \textbf{Análise e Aplicação:} Comparação dos resultados com métodos tradicionais e avaliação do potencial do modelo para subsidiar decisões estratégicas em situações de emergência.
+\end{enumerate}
+
+\section{Abordagem Experimental}
+\label{sec:abordagem-experimental}
+
+O desenvolvimento experimental do framework seguirá uma abordagem progressiva, baseada nas seguintes fases:
+
+\begin{enumerate}[label=\alph*), noitemsep]
+    \item \textbf{Fase Inicial - Prova de Conceito:} Implementação de um protótipo utilizando dados sintéticos e grafos simplificados para validar os algoritmos básicos de \gls{GNN}.
+    
+    \item \textbf{Fase Intermediária - Integração de Dados Reais:} Incorporação de dados reais de \gls{ERB}s e geoespaciais para construção do grafo urbano completo, com treinamento e ajuste dos modelos para capturar padrões de mobilidade.
+    
+    \item \textbf{Fase Avançada - Cenários Emergenciais:} Simulação de situações de emergência para testar a capacidade preditiva do modelo em condições críticas, avaliando a precisão das previsões e a eficácia das rotas de evacuação sugeridas.
+    
+    \item \textbf{Fase Final - Validação e Otimização:} Refinamento do modelo com base nos resultados das fases anteriores, otimização de hiperparâmetros e avaliação final do desempenho do sistema.
+\end{enumerate}
+
+Para cada fase, serão realizados experimentos controlados que permitam isolar e analisar o impacto de diferentes variáveis no desempenho do modelo, garantindo a robustez e a confiabilidade dos resultados obtidos.
+
+\bigskip
+
+\noindent \textbf{Contribuição:}  
+O desenvolvimento deste framework integrará conceitos avançados de \gls{GeoAI} e aprendizado profundo em grafos, contribuindo para a melhoria da capacidade preditiva dos sistemas de gestão de crises urbanas e oferecendo subsídios para políticas públicas e estratégias operacionais em contextos de emergência.

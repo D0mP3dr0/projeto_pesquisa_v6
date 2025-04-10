@@ -1,0 +1,201 @@
+\chapter{Cronograma e Recursos}
+\label{chap:cronograma}
+
+Este capítulo apresenta o planejamento temporal e os recursos necessários para a execução bem-sucedida do projeto de pesquisa. O cronograma foi estruturado considerando as etapas metodológicas descritas anteriormente e os recursos foram dimensionados para atender às demandas técnicas e computacionais do desenvolvimento do framework proposto.
+
+\section{Cronograma de Atividades}
+
+A Tabela \ref{tab:cronograma-atividades} apresenta a distribuição temporal das principais atividades do projeto, organizadas em etapas sequenciais que totalizam 15 meses de duração. O cronograma prevê sobreposições estratégicas entre algumas atividades, de modo a otimizar o fluxo de trabalho e garantir o cumprimento dos prazos estabelecidos.
+
+\begin{table}[H]
+    \centering
+    \caption{Cronograma de Atividades do Projeto}
+    \label{tab:cronograma-atividades}
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Etapa} & \textbf{Duração (meses)} \\
+        \midrule
+        Revisão bibliográfica e fundamentação teórica & 2 \\
+        Estruturação e refinamento do projeto de pesquisa & 1 \\
+        Coleta e processamento de dados geoespaciais e \gls{ERB}s & 2 \\
+        Desenvolvimento do grafo com integração do \gls{PITCIC} e da camada \gls{ERB} & 2 \\
+        Implementação e treinamento dos modelos \gls{GNN}s & 2 \\
+        Simulação de cenários e validação dos resultados preliminares & 1 \\
+        Sistema de alerta e módulo de simulação de notificações & 1 \\
+        Avaliação dos resultados e otimização do modelo & 1 \\
+        Redação e revisão da Dissertação de Mestrado & 3 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Detalhamento das Etapas}
+
+A seguir, são detalhadas as atividades previstas em cada etapa do cronograma, com seus respectivos objetivos e entregas:
+
+\subsection{Revisão Bibliográfica e Fundamentação Teórica}
+\textbf{Duração:} 2 meses
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Levantamento e análise de publicações científicas nas áreas de \gls{GNN}s, modelagem de fluxos populacionais e sistemas de resposta a emergências.
+    \item Estudo dos fundamentos teóricos de grafos multicamadas e suas aplicações em análise geoespacial.
+    \item Investigação de métodos existentes para integração de dados de \gls{ERB}s em modelagem urbana.
+    \item Análise de técnicas utilizadas para previsão de comportamentos populacionais em situações de crise.
+\end{itemize}
+
+\textbf{Entregas:} Relatório de revisão bibliográfica; Mapa conceitual das principais teorias e abordagens; Banco de referências organizado.
+
+\subsection{Estruturação e Refinamento do Projeto}
+\textbf{Duração:} 1 mês
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Definição detalhada da metodologia e fluxo de trabalho.
+    \item Seleção e justificativa das métricas de avaliação.
+    \item Preparação do ambiente de desenvolvimento com as bibliotecas e frameworks necessários.
+    \item Elaboração de protocolos para aquisição e tratamento de dados.
+\end{itemize}
+
+\textbf{Entregas:} Projeto detalhado; Ambiente de desenvolvimento configurado; Protocolos metodológicos documentados.
+
+\subsection{Coleta e Processamento de Dados}
+\textbf{Duração:} 2 meses
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Aquisição de dados brutos de \gls{ERB}s através de parcerias institucionais.
+    \item Coleta de informações geoespaciais e variáveis contextuais de fontes públicas.
+    \item Limpeza, normalização e transformação dos dados para formatos compatíveis.
+    \item Criação de pipelines de pré-processamento automatizados.
+\end{itemize}
+
+\textbf{Entregas:} Conjunto de dados processados; Documentação dos procedimentos de tratamento; Estatísticas descritivas dos dados coletados.
+
+\subsection{Desenvolvimento do Grafo Multicamadas}
+\textbf{Duração:} 2 meses
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Construção da estrutura de grafos integrando o modelo \gls{PITCIC} com dados de cobertura de \gls{ERB}s.
+    \item Definição e implementação da representação dos nós, arestas e atributos.
+    \item Desenvolvimento de algoritmos para integração das diferentes camadas do grafo.
+    \item Validação da consistência e coerência da estrutura do grafo.
+\end{itemize}
+
+\textbf{Entregas:} Biblioteca de construção de grafos; Grafo multicamadas implementado; Documentação técnica da estrutura.
+
+\subsection{Implementação e Treinamento dos Modelos}
+\textbf{Duração:} 2 meses
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Implementação das arquiteturas de \gls{GNN}s selecionadas (GCN, GAT, TGN) utilizando PyTorch Geometric.
+    \item Configuração dos procedimentos de treinamento e validação.
+    \item Execução de experimentos com diferentes configurações de hiperparâmetros.
+    \item Análise comparativa do desempenho dos diferentes modelos.
+\end{itemize}
+
+\textbf{Entregas:} Modelos implementados e treinados; Logs de treinamento; Relatório comparativo de desempenho.
+
+\subsection{Simulação e Validação}
+\textbf{Duração:} 1 mês
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Execução de simulações de cenários emergenciais para testar o comportamento do modelo.
+    \item Avaliação dos resultados utilizando as métricas definidas.
+    \item Identificação de áreas críticas e padrões emergentes nas simulações.
+    \item Ajustes preliminares nos modelos com base nos resultados das simulações.
+\end{itemize}
+
+\textbf{Entregas:} Resultados das simulações; Relatório de validação; Análise visual dos padrões identificados.
+
+\subsection{Sistema de Alerta}
+\textbf{Duração:} 1 mês
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Desenvolvimento do módulo de detecção de situações críticas.
+    \item Implementação do sistema de geração de alertas baseado nas previsões do modelo.
+    \item Integração do sistema de alerta com o framework de simulação.
+    \item Testes de desempenho e usabilidade do módulo.
+\end{itemize}
+
+\textbf{Entregas:} Módulo de alerta implementado; Documentação do sistema; Relatório de testes.
+
+\subsection{Avaliação e Otimização}
+\textbf{Duração:} 1 mês
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Análise crítica dos resultados obtidos em todas as etapas anteriores.
+    \item Identificação de limitações e oportunidades de melhoria.
+    \item Otimização dos componentes críticos do framework.
+    \item Validação final do sistema integrado.
+\end{itemize}
+
+\textbf{Entregas:} Relatório de avaliação; Framework otimizado; Documentação das melhorias implementadas.
+
+\subsection{Redação e Revisão da Dissertação}
+\textbf{Duração:} 3 meses
+
+\textbf{Atividades:}
+\begin{itemize}[noitemsep]
+    \item Organização e síntese dos resultados obtidos.
+    \item Redação dos capítulos da dissertação.
+    \item Revisão do texto por pares e orientador.
+    \item Elaboração da apresentação para defesa.
+\end{itemize}
+
+\textbf{Entregas:} Dissertação de Mestrado; Apresentação para defesa; Artigos científicos derivados do trabalho.
+
+\section{Recursos Necessários}
+
+Para a execução adequada do projeto, serão necessários os seguintes recursos:
+
+\subsection{Recursos Computacionais}
+\begin{itemize}[noitemsep]
+    \item \textbf{Hardware:} Estação de trabalho com GPU compatível com CUDA (mínimo NVIDIA RTX 2080 ou equivalente) para treinamento dos modelos de \gls{GNN}; servidores com capacidade de processamento paralelo para simulações complexas.
+    
+    \item \textbf{Capacidade de Armazenamento:} Mínimo de 4TB para armazenamento de dados brutos, pré-processados e resultados de simulações.
+    
+    \item \textbf{Infraestrutura de Rede:} Conexão de alta velocidade para transferência eficiente de grandes volumes de dados.
+\end{itemize}
+
+\subsection{Recursos de Software}
+\begin{itemize}[noitemsep]
+    \item \textbf{Frameworks de Aprendizado Profundo:} PyTorch, PyTorch Geometric, TensorFlow.
+    
+    \item \textbf{Ferramentas de Geoprocessamento:} QGIS, ArcGIS, bibliotecas Python para manipulação de dados geoespaciais (GeoPandas, GDAL, Rasterio).
+    
+    \item \textbf{Bancos de Dados:} PostgreSQL com extensão PostGIS, MongoDB para dados não estruturados.
+    
+    \item \textbf{Ambientes de Desenvolvimento:} JupyterLab, VSCode, Git para controle de versão.
+    
+    \item \textbf{Ferramentas de Visualização:} Matplotlib, Plotly, Folium, NetworkX para visualização de grafos.
+\end{itemize}
+
+\subsection{Dados}
+\begin{itemize}[noitemsep]
+    \item \textbf{Registros de \gls{ERB}s:} Acesso a históricos de conexões de estações de rádio base (mediante parcerias com operadoras de telefonia).
+    
+    \item \textbf{Dados Geoespaciais:} Acesso a bases públicas (IBGE, OpenStreetMap, SRTM) e, quando necessário, aquisição de dados comerciais de alta resolução.
+    
+    \item \textbf{Informações Climatológicas:} Séries históricas do INMET e outras fontes meteorológicas.
+    
+    \item \textbf{Dados Socioeconômicos:} Acesso a microdados do Censo e pesquisas complementares do IBGE.
+\end{itemize}
+
+\subsection{Infraestrutura}
+\begin{itemize}[noitemsep]
+    \item \textbf{Laboratório:} Acesso a ambiente adequado para desenvolvimento e execução de simulações.
+    
+    \item \textbf{Recursos Bibliográficos:} Acesso a bases de dados científicas e periódicos especializados.
+    
+    \item \textbf{Suporte Técnico:} Apoio para configuração e manutenção dos ambientes computacionais.
+\end{itemize}
+
+\section{Considerações sobre o Cronograma}
+O cronograma apresentado contempla as principais atividades do projeto, distribuídas ao longo de 15 meses. Foi elaborado prevendo-se eventuais ajustes conforme o desenvolvimento da pesquisa, com margem para acomodar desafios imprevistos que possam surgir durante o processo. 
+
+A metodologia progressiva adotada garante que cada fase seja construída sobre os resultados da anterior, culminando no desenvolvimento de um framework robusto e validado para a modelagem preditiva de fluxos populacionais em cenários de emergência. Este planejamento também permite a geração de resultados parciais que poderão ser publicados ao longo do desenvolvimento do trabalho, contribuindo para a disseminação contínua do conhecimento gerado. 

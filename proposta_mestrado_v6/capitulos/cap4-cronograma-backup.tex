@@ -1,0 +1,58 @@
+\chapter{Cronograma e Recursos}
+\label{chap:cronograma}
+
+\begin{table}[H]
+    \centering
+    \caption{Cronograma de Atividades do Projeto (Duração em meses)}
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Etapa} & \textbf{Duração (meses)} \\
+        \midrule
+        Revisão bibliográfica e fundamentação teórica & 2 \\
+        Estruturação e refinamento do projeto de pesquisa & 1 \\
+        Coleta e processamento de dados geoespaciais e \gls{ERB}s & 2 \\
+        Desenvolvimento do grafo com integração do \gls{PITCIC} e da camada \gls{ERB} & 2 \\
+        Implementação e treinamento dos modelos \gls{GNN}s & 2 \\
+        Simulação de cenários e validação dos resultados preliminares & 1 \\
+        Sistema de alerta e módulo de simulação de notificações & 1 \\
+        Avaliação dos resultados e otimização do modelo & 1 \\
+        Redação e revisão da Dissertação de Mestrado & 3 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Detalhamento das Etapas}
+
+\begin{enumerate}[label=\arabic*., leftmargin=1.5cm]
+    \item \textbf{Revisão bibliográfica e fundamentação teórica:} Levantamento e análise de publicações científicas nas áreas de \gls{GNN}s, modelagem de fluxos populacionais e sistemas de resposta a emergências. Esta fase será fundamental para estabelecer o embasamento teórico do trabalho e identificar as abordagens mais promissoras.
+    
+    \item \textbf{Estruturação e refinamento do projeto:} Definição detalhada da metodologia, seleção das métricas de avaliação e preparação do ambiente de desenvolvimento com as bibliotecas e frameworks necessários.
+    
+    \item \textbf{Coleta e processamento de dados:} Aquisição de dados brutos de \gls{ERB}s, informações geoespaciais e variáveis contextuais, seguida de limpeza, normalização e transformação para formatos compatíveis com o framework de grafos.
+    
+    \item \textbf{Desenvolvimento do grafo multicamadas:} Construção da estrutura de grafos integrando o modelo \gls{PITCIC} com dados de cobertura de \gls{ERB}s, definindo a representação dos nós, arestas e atributos.
+    
+    \item \textbf{Implementação e treinamento dos modelos:} Desenvolvimento e treinamento das arquiteturas de \gls{GNN}s selecionadas, com foco em GCN, GAT e TGN, utilizando PyTorch Geometric.
+    
+    \item \textbf{Simulação e validação:} Execução de simulações de cenários emergenciais para testar o comportamento do modelo, com avaliação dos resultados utilizando métricas de precisão, recall e F1-score.
+    
+    \item \textbf{Sistema de alerta:} Implementação do módulo de alertas e notificações que poderá subsidiar a tomada de decisão em situações críticas.
+    
+    \item \textbf{Avaliação e otimização:} Análise crítica dos resultados obtidos, identificação de limitações e implementação de melhorias para otimizar o desempenho do modelo.
+    
+    \item \textbf{Redação e revisão:} Documentação completa da pesquisa, metodologia, resultados e conclusões na forma da Dissertação de Mestrado.
+\end{enumerate}
+
+\section{Recursos Necessários}
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Computacionais:} Estação de trabalho com GPU compatível com CUDA para treinamento dos modelos de \gls{GNN}, servidores para processamento de dados geoespaciais.
+    
+    \item \textbf{Software:} PyTorch, PyTorch Geometric, QGIS, bibliotecas Python para manipulação de dados geoespaciais (GeoPandas, GDAL), ferramentas de visualização de grafos.
+    
+    \item \textbf{Dados:} Acesso a registros de \gls{ERB}s (mediante parcerias com operadoras de telefonia), dados geoespaciais públicos (IBGE, OpenStreetMap), informações climatológicas (INMET).
+    
+    \item \textbf{Infraestrutura:} Laboratório para desenvolvimento e execução de simulações, acesso a bases de dados georreferenciadas.
+\end{itemize}
+
+\noindent Este cronograma contempla as principais atividades do projeto, distribuídas ao longo de 15 meses, prevendo eventuais ajustes conforme o desenvolvimento da pesquisa. A metodologia progressiva adotada garante que cada fase seja construída sobre os resultados da anterior, culminando no desenvolvimento de um framework robusto e validado para a modelagem preditiva de fluxos populacionais em cenários de emergência.

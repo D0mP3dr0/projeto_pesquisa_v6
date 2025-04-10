@@ -1,0 +1,85 @@
+% pacotes.tex
+% Pacotes essenciais para a proposta de mestrado: 
+% "Modelagem Preditiva de Fluxos Populacionais com Grafos Neurais"
+
+% Codificação e idioma
+\usepackage[utf8]{inputenc} % Codificação dos caracteres
+\usepackage[T1]{fontenc}    % Codificação da fonte
+\usepackage[brazil]{babel}  % Idioma português
+
+\usepackage{lmodern}        % Fonte Latin Modern
+\usepackage{microtype}      % Melhora a tipografia
+
+% Pacotes matemáticos e de símbolos
+\usepackage{amsmath, amssymb, amsthm}    % Fórmulas matemáticas e teoremas
+\usepackage{mathtools}
+
+% Layout e formatação geral
+\usepackage{geometry}       % Configuração de margens e tamanho da página
+\usepackage{setspace}       % Controle de espaçamento entre linhas
+\usepackage{indentfirst}    % Indenta o primeiro parágrafo de cada seção
+\usepackage{fancyhdr}       % Cabeçalhos e rodapés customizados
+
+% Figuras e gráficos
+\usepackage{graphicx}       % Inclusão de imagens
+\usepackage{float}          % Controle de figuras e tabelas
+\usepackage{caption}        % Personalização de legendas
+\usepackage{subcaption}     % Subfiguras e subtabelas
+\usepackage{wrapfig}        % Imagens com texto envolvente
+
+% Tabelas
+\usepackage{array}          % Ferramentas avançadas para tabelas
+\usepackage{booktabs}       % Linhas de tabelas mais elegantes
+\usepackage{multirow}       % Mesclagem de células em tabelas
+
+% Referências bibliográficas e citações
+\usepackage{natbib}         % Estilo de citações
+\usepackage{doi}            % Para exibição de DOIs
+
+% Glossário e acrônimos - deve estar antes do hyperref
+\usepackage[acronym,nomain,nonumberlist,nogroupskip,toc]{glossaries}
+\makeglossaries
+
+% Hyperlinks e referências internas
+\PassOptionsToPackage{hidelinks}{hyperref} % Garantir opções consistentes
+\usepackage{hyperref}  % Links clicáveis sem caixas colorida
+
+% Algoritmos e pseudocódigo
+\usepackage{algorithm}      
+\usepackage{algorithmic}
+
+% Listas personalizadas
+\usepackage{enumitem}
+
+% Código fonte e destaque de sintaxe
+\usepackage{listingsutf8}
+\usepackage{xcolor}
+
+% Configuração para listagens (exemplo com Python)
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    language=Python,
+    numbers=left,
+    numberstyle=\tiny,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{gray},
+    inputencoding=utf8/latin1,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+            {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+            {ã}{{\~a}}1 {ẽ}{{\~e}}1 {ĩ}{{\~i}}1 {õ}{{\~o}}1 {ũ}{{\~u}}1
+            {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1 {ê}{{\^e}}1 {ô}{{\^o}}1
+            {º}{{\textordmasculine}}1 {ª}{{\textordfeminine}}1
+}
+
+% Outras utilidades
+\usepackage{csquotes}  % Citações corretamente formatadas
+
+% Corrigir problemas com nomes das tabelas em português
+\addto\captionsbrazil{%
+  \renewcommand{\listfigurename}{Lista de Figuras}%
+  \renewcommand{\listtablename}{Lista de Tabelas}%
+}
