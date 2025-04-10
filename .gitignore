@@ -1,0 +1,50 @@
+# Arquivos temporários LaTeX
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.dvi
+*.xdv
+*-converted-to.*
+*.pdf
+*.ps
+*.eps
+*.tex~
+
+# Arquivos de compilação
+output/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos específicos do ABNTeX2
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ilg
+*.ind
+*.ist
+*.loa
+
+# Glossários
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# Editor temporaries
+*~
+.\#*
+\#*\#
+.DS_Store 
